@@ -1,0 +1,17 @@
+JMS - ActiveMQ
+
+Definindo a variável de ambiente: JAVA_HOME
+No terminal:
+Inicie o terminal como usuário root: sudo su
+Identifique onde o java está instalado na sua máquina Ubuntu: which java
+Edite o arquivo bash.bashrc para configurar o JAVA_HOME globalmente: nano .bashrc
+Ao final do arquivo digite:
+JAVA_HOME=/usr/lib/jvm/default-java/bin
+export JAVA_HOME
+PATH=$PATH:$JAVA_HOME
+export PATH
+
+Salve as alterações no arquivo
+
+Digite: exec bash
+echo $JAVA_HOME
